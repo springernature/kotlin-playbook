@@ -6,7 +6,7 @@ We tend to...
 
 * Define fundamental operations as extension functions, [usually in the same file](../organising-code/README.md).
 
->> Tip: Extension functions work better with variance qualifiers on generics than do methods of a class.
+  > Tip: Extension functions work better with variance qualifiers on generics than do methods of a class.
 
 * Define methods on the class only when required for polymorphism: to implement an interface, or to extend an abstract class.
 
