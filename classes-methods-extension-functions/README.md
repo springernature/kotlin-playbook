@@ -9,3 +9,5 @@ We tend to...
 * Define methods on the class only when required for object-oriented polymorphism: to implement an interface, or to extend an abstract class.
 
 * Define extension functions that relate the class to other concepts in other packages or modules.  E.g. in "adapter" packages, when using the Hexagonal architecture.
+
+* Define withXXX, plusXXX, minusXXX extensions to abstract the use of the builtin `copy` method of data classes where that simplifies code, removes duplication, and/or reduces possibility of coding error.
