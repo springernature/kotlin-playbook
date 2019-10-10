@@ -10,7 +10,7 @@ If that's hard... you know what to do!
 
 This results in an architecture of pipelines of functions that translate source data into intermediate forms that simplify each further step of processing.
 
-(Compare with the OO approach of making objects of the application domain model support persistence, UI, validation, serialisation, etc. by polymorphic methods in the model, or annotations on the fields and methods.)
+(Compare with the OO approach of making objects of the application domain model support persistence, UI, validation, serialisation, etc. by polymorphic methods in the model, or annotations on its fields and methods.)
 
 ## Refactoring pipelines
 
