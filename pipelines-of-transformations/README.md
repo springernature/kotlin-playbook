@@ -18,4 +18,6 @@ Factor big steps of collection pipelines into sequences of small steps.  Those s
 
 Flatten pipelines to make them easier to read when downstream transformations do not need parameters of upstream transformations.
 
+![Refactoring a pipeline into a sequence of steps](refactor-pipelines.svg)
+
 Factor multiple intermediate steps out into extension functions.
