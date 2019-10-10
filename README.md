@@ -1,6 +1,6 @@
 # Kotlin Playbook
 
-How we write Kotlin code in the Content Acquisition domain of Springer Nature Digital IT.
+How we write (backend) Kotlin code in the Content Acquisition domain of Springer Nature Digital IT.
 
 (A work in progress)
 
