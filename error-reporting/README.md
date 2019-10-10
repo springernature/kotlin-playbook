@@ -1,10 +1,10 @@
 # Reporting and Handling Errors
 
-Exceptions are not type checked, and are slow.
+Exceptions are not type checked.  Code using exceptions is fast in the success path but very slow for failure cases.
 
-Nullable types do not let us return information about an error.
+Nullable types are type checked, but do not let us return information about an error.
 
-Therefore, we use a Result type to report errors that will be handled by code we write.  A Result type is a sealed class hierarchy (aka algebraic data type) that is _either_ a successfully computed value, _or_ a failure described by structured data.
+**Therefore**, we use a Result type to report errors that will be handled by code we write.  A Result type is a sealed class hierarchy (aka algebraic data type) that is _either_ a successfully computed value, _or_ a failure described by structured data.
 
 Failures that are explicitly detected by business logic are _always_ returned as a failure case of the Result type.
 
