@@ -4,11 +4,13 @@ Exceptions are not type checked, and are slow.
 
 Nullable types do not let us return information about an error.
 
-Therefore...
+Therefore, we use a Result type to report errors that will be handled by code we write.  A Result type is a sealed class hierarchy (aka algebraic data type) that is _either_ a successfully computed value, _or_ a failure described by structured data.
 
- * when an error can be handled by a single point in our system (especially if that is in framework code, such as the error handler in the Jetty HTTP server), then we throw an exception.
- * when we need to handle a failure in our code, we use a Result type to return _either_ a successfully computed value, _or_ a failure described by structured data.
- * failures that are explicitly detected by business logic are _always_ returned as a failure case of the Result type.
+Failures that are explicitly detected by business logic are _always_ returned as a failure case of the Result type.
+
+Technical errors are usually reported by library code throwing exceptions. If they must be handled in our code, we catch them as close the source as possible and translate them into a failure Result.
+
+Technical errors that can be handled by a single point in our system are reported by exceptions.  For example, our HTTP services allow such technical errors to propagate through our code to be caught by the error handler in the Jetty HTTP server and returned to the client as a 500 status. 
 
 ![Exception or Result?](error-reporting.svg)
 
