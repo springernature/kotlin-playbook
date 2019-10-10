@@ -12,4 +12,5 @@ Organising the codebase:
 Mostly-Functional Design:
 * [Immutable domain models](immutable-domain-models/README.md)
 * [Pipelines of transformations](pipelines-of-transformations/README.md)
+* [Avoid reflection](reflection/README.md)
 * [Reporting and handling errors](error-reporting/README.md)
