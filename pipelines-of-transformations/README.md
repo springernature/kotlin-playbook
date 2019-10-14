@@ -23,10 +23,6 @@ Flatten pipelines to make them easier to read when downstream transformations do
 Factor multiple intermediate steps out into extension functions.
 
 ```kotlin
-transactions.grandTotal()
-
-...
-
 fun Iterable<Transaction>.grandTotal() = 
   this.flatMap { t -> t.lines }
       .sumBy { l -> l.lineTotal() }
