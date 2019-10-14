@@ -4,8 +4,11 @@ How we write (backend) Kotlin code in the Content Acquisition domain of Springer
 
 (A work in progress)
 
+We follow the [standard Kotlin coding conventions](https://kotlinlang.org/docs/reference/coding-conventions.html), although our codebase predates these, and so may occasionaly diverge for historical reasons.
+
+Beyond the standard coding conventions, we have the following rules of thumb:
+
 Organising the codebase:
-* We follow the [standard Kotlin coding conventions](https://kotlinlang.org/docs/reference/coding-conventions.html), although our codebase predates these, and so may occasionaly diverge for historical reasons.
 * [Classes, Methods, and Extension Functions](classes-methods-extension-functions/README.md)
 * [Organising code into files](organising-code/README.md)
 * [Tests and supporting code](test-code/README.md)
