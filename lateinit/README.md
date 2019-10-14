@@ -1,4 +1,4 @@
-# Avoid `lateinit`
+# We avoid `lateinit` in production code
 
 The `lateinit` modifier tells the type-checker that a `var` property will be initialised "by magic" before it is used, and so does not need to be given a nullable type. It prevents the type checker helping you initialise properties correctly. Instead, programming errors in initialisation are reported by exceptions later at runtime.
 
