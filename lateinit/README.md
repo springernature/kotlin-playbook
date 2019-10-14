@@ -4,6 +4,6 @@ The `lateinit` modifier tells the type-checker that a `var` property will be ini
 
 It is intended for when Kotlin code is interfacing with legacy Java frameworks that use reflection to poke values into fields behind the back of the type checker and visibility modifiers.
 
-Since we [avoid `var` properties](immutable-domain-models/README.md) and [avoid reflection](reflection/README.md), there is no need for `lateinit` in our own code.  
+Since we [avoid `var` properties](../immutable-domain-models/README.md) and [avoid reflection](../reflection/README.md), there is no need for `lateinit` in our own code.  
 
 We consider any need of `lateinit` an indicator that our design is flawed, and refactor so that it is unnecessary.
