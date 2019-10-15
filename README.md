@@ -17,7 +17,12 @@ Design style:
 * [Immutable domain models](immutable-domain-models/README.md)
 * [Pipelines of transformations](pipelines-of-transformations/README.md)
 * [Reporting and handling errors](error-reporting/README.md)
+* [Sleeping Policemen] TODO
 * [Monitoring events, rather than static loggers](monitoring-events/README.md)
+
+Testing:
+* [Testing code that parses untrusted data] TODO
+* [Testing multithreaded code] TODO
 
 Things we avoid (in production code):
 * [Avoid `lateinit`](lateinit/README.md)
