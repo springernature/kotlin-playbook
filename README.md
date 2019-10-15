@@ -21,4 +21,4 @@ Mostly-Functional Design:
 Things we avoid (in production code):
 * [Avoid reflection](reflection/README.md)
 * [Avoid `lateinit`](lateinit/README.md)
-* [Avoid "bang-bang"](bang-bang/README.md)
+* [Avoid the `!!` operator](bang-bang/README.md)
