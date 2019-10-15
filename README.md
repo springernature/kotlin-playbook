@@ -13,7 +13,7 @@ Organising the codebase:
 * [Organising code into files](organising-code/README.md)
 * [Tests and supporting code](test-code/README.md)
 
-Mostly-Functional Design:
+Design style:
 * [Immutable domain models](immutable-domain-models/README.md)
 * [Pipelines of transformations](pipelines-of-transformations/README.md)
 * [Reporting and handling errors](error-reporting/README.md)
