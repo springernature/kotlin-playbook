@@ -19,6 +19,6 @@ Mostly-Functional Design:
 * [Reporting and handling errors](error-reporting/README.md)
 
 Things we avoid (in production code):
-* [Avoid reflection](reflection/README.md)
 * [Avoid `lateinit`](lateinit/README.md)
 * [Avoid the `!!` operator](bang-bang/README.md)
+* [Avoid reflection](reflection/README.md)
