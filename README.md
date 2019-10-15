@@ -17,7 +17,7 @@ Mostly-Functional Design:
 * [Immutable domain models](immutable-domain-models/README.md)
 * [Pipelines of transformations](pipelines-of-transformations/README.md)
 * [Reporting and handling errors](error-reporting/README.md)
-* [Monitoring events, rather than logging](monitoring-events/README.md)
+* [Monitoring events, rather than static loggers](monitoring-events/README.md)
 
 Things we avoid (in production code):
 * [Avoid `lateinit`](lateinit/README.md)
