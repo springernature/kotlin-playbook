@@ -2,7 +2,7 @@
 
 How we write (backend) Kotlin code in the Content Acquisition domain of Springer Nature Digital IT.
 
-(A work in progress)
+_A living document_
 
 We follow the [standard Kotlin coding conventions](https://kotlinlang.org/docs/reference/coding-conventions.html), although our codebase predates these, and so may occasionaly diverge for historical reasons.
 
