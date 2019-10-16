@@ -8,6 +8,9 @@ Test for properties that are [_invariant_](https://en.wikipedia.org/wiki/Invaria
 
 > E.g. the behaviour when there are two threads, four threads, 13 threads, etc. should be the same as when there is one thread
 
+Be careful that synchronisation in the test does not end up serialising threads through the code being tested.  E.g. use lock-free data structures in the test code, rather than locks or synchronized blocks.
+
+## Example
 
 Here is an example from the OPA project that tests that a projection produces the same result when updated by four threads as it does when updated by a single thread (which is checked by other tests in its test suite):
 
