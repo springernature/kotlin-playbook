@@ -21,7 +21,7 @@ Design style:
 * [Monitoring events, rather than static loggers](monitoring-events/README.md)
 
 Testing:
-* [Testing code that parses untrusted data](testing-parse-untrusted-data/README.md)
+* [Testing code that parses data from the network](testing-code-that-parses-data-from-the-network/README.md)
 * [Testing multithreaded code](testing-multithreaded-code/README.md)
 
 Things we avoid (in production code):
