@@ -10,6 +10,8 @@ Test for properties that are [_invariant_](https://en.wikipedia.org/wiki/Invaria
 
 Be careful that synchronisation in the test does not end up serialising threads through the code being tested.  E.g. use lock-free data structures in the test code, rather than locks or synchronized blocks.
 
+Make sure you see the test of the invariant fail, before making it pass.
+
 ## Example
 
 Here is an example from the OPA project that tests that a projection produces the same result when updated by four threads as it does when updated by a single thread (which is checked by other tests in its test suite):
