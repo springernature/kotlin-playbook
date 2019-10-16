@@ -1,6 +1,6 @@
 # Speed Bumps
 
-![UK road sign for speed bumps](uk-road-signs-57752.jpg)
+![UK road sign for speed bumps](speed-bump.jpg)
 
 We deliberately make it difficult to implement things that we don't want too much of in our codebase, so that we have to consider whether the effort is worth it.
 
