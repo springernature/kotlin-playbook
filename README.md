@@ -22,7 +22,7 @@ Design style:
 
 Testing:
 * [Testing code that parses untrusted data](testing-parse-untrusted-data/README.md)
-* [Testing multithreaded code](testing-multithreading/README.md)
+* [Testing multithreaded code](testing-multithreaded-code/README.md)
 
 Things we avoid (in production code):
 * [Avoid `lateinit`](lateinit/README.md)
