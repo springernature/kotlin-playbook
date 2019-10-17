@@ -38,7 +38,7 @@ class InMemoryProjectorStressTest(threadCount: Int) {
         eventsFrom = { eventId -> eventStore.fetchAfter(eventId) },
         updateStateFn = { orderedEvent ->
             when (val event = orderedEvent.event) {
-                is Started     -> CreateRow(ProjectionRow(event.key, 1))
+                is Started     -> CreateRow(ProjectionRow(event.key, 0))
                 is Stopped     -> DeleteRow(event.key.toExternalForm())
                 is Incremented -> UpdateRow<ProjectionRow>(event.key.toExternalForm()) { row ->
                     row.copy(value = row.value + 1)
@@ -69,8 +69,8 @@ class InMemoryProjectorStressTest(threadCount: Int) {
         }
 
         assertThat(invocationCount.get(), equalTo(1000))
-        assertThat(projector.currentState().single { it.key == a }.value, equalTo(501))
-        assertThat(projector.currentState().single { it.key == b }.value, equalTo(501))
+        assertThat(projector.currentState().single { it.key == a }.value, equalTo(500))
+        assertThat(projector.currentState().single { it.key == b }.value, equalTo(500))
     }
 
     companion object {
