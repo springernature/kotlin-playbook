@@ -23,6 +23,9 @@ Design style:
 * [Monitoring events, rather than static loggers](monitoring-events/README.md)
 
 Testing:
+
+![The feature filter funnel (AKA kone of kwalitee)](feature-filter-funnel.svg)
+
 * [Testing code that parses data from the network](testing-code-that-parses-data-from-the-network/README.md)
 * [Testing code that writes data to the network](testing-code-that-writes-data-to-the-network/README.md)
 * [Testing multithreaded code](testing-multithreaded-code/README.md)
