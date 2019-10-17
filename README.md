@@ -13,7 +13,6 @@ Organising the codebase:
 * [Organising code into files](organising-code/README.md)
 * [Tests and supporting code](test-code/README.md)
 * [Deployable and library modules](modules/README.md)
-* [Deployable modules prefixed by application name](deployable-module-prefixes/README.md)
 
 Design style:
 * [Immutable domain models](immutable-domain-models/README.md)
