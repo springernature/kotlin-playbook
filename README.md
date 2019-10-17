@@ -22,6 +22,7 @@ Design style:
 
 Testing:
 * [Testing code that parses data from the network](testing-code-that-parses-data-from-the-network/README.md)
+* [Testing code that writes data to the network](testing-code-that-writes-data-to-the-network/README.md)
 * [Testing multithreaded code](testing-multithreaded-code/README.md)
 
 Things we avoid (in production code):
