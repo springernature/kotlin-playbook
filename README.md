@@ -10,6 +10,7 @@ Beyond the standard coding conventions, we have the following rules of thumb:
 
 Organising the codebase:
 * [Classes, Methods, and Extension Functions](classes-methods-extension-functions/README.md)
+* [Laying out a class](laying-out-a-class/README.md)
 * [Organising code into files](organising-code/README.md)
 * [Tests and supporting code](test-code/README.md)
 * [Deployable and library modules](modules/README.md)
