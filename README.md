@@ -16,7 +16,7 @@ Organising the codebase:
 Design style:
 * [Immutable domain models](immutable-domain-models/README.md)
 * [Pipelines of transformations](pipelines-of-transformations/README.md)
-* [Reporting and handling errors](error-reporting/README.md)
+* [Reporting and handling errors (exceptions, null, monads, etc.](error-reporting/README.md)
 * [Speed bumps](speed-bumps/README.md)
 * [Monitoring events, rather than static loggers](monitoring-events/README.md)
 
