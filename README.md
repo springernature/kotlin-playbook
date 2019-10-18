@@ -11,8 +11,8 @@ Beyond the standard coding conventions, we have the following rules of thumb:
 Organising the codebase:
 * [Classes, Methods, and Extension Functions](classes-methods-extension-functions/README.md)
 * [Organising code into files](organising-code/README.md)
-* [Tests and supporting code](test-code/README.md)
 * [Deployable and library modules](modules/README.md)
+* [Tests and supporting code](test-code/README.md)
 
 Design style:
 * [Immutable domain models](immutable-domain-models/README.md)
