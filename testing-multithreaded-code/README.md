@@ -14,7 +14,7 @@ Make sure you see the test of the invariant fail, before making it pass.
 
 ## Example
 
-Here is an example from the OPA project that tests that a projection produces the same result when updated by four threads as it does when updated by a single thread:
+Here is an example that tests that a projection calculated from an event log produces the same result when updated by four threads as it does when updated by a single thread:
 
 ```kotlin
 import com.natpryce.hamkrest.assertion.assertThat
