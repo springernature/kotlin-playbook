@@ -2,9 +2,9 @@
 
 ## We write parsers as pure functions
 
-Easy to test in isolation.
+Most parsers are a function from JsonNode to domain type (or a Result of domain type). Don't couple the formatter to OutputStream, Request or Response.
 
-No hidden dependencies.
+This makes them easy to test in isolation: there are no hidden dependencies.
 
 ## We never use reflection or serialisation to parse data from the network
 
