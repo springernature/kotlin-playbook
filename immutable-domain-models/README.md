@@ -1,5 +1,7 @@
 # Immutable Domain Models
 
+Our domain models are implemented as data classes.
+
 Data classes MUST be immutable.
 
 E.g. we only use `val` for properties:
@@ -24,3 +26,4 @@ data class Article(
     var contentRef: URI)
 ```
 
+Orchestration of our applications is written in an object-oriented style.  Therefore, the design of each component follows a [Functional Core, Imperative Shell](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell) style.
