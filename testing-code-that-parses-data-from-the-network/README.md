@@ -6,9 +6,9 @@ Easy to test in isolation.
 
 No hidden dependencies.
 
-## [We never use reflection to parse data from the network](../reflection/README.md)
+## We never use reflection or serialisation to parse data from the network
 
-This is (a) to avoid remote code execution vulnerabilities in popular serialisation libraries, and (b) to decouple on-the-wire formats from the in-memory model, allowing endpoints to support multiple versions of the payload content, selected by HTTP content type negotiation.
+[We never use reflection or serialisation to parse data from the network](../reflection/README.md). This is (a) to avoid remote code execution vulnerabilities in popular serialisation libraries, and (b) to decouple on-the-wire formats from the in-memory model, allowing endpoints to support multiple versions of the payload content, selected by HTTP content type negotiation.
 
 ## We validate the test _inputs_ against published JSON schemas
 
