@@ -14,16 +14,15 @@ This is (a) to avoid remote code execution vulnerabilities in popular serialisat
 
 If we have documented the protocol with JSON schemas and published those schemas for use by other teams, our tests check that the input data used to test our parsers conform to the schemas we have published.
 
+## We test parsers for incoming requests with fuzz tests
 
-## We fuzz test parser functions
+If a function is parsing incoming requests, parse errors should be returned from the function as a Result Failure, not an exception.  This should be unit tested. 
 
-We fuzz test parser functions to ensure that they do not throw unexpected exceptions that cannot be type checked.
+A JSON parse error should be reported by an `InvalidJson` error code that contains a JSON Pointer identifying the invalid elements in the JSON message.  We do not write a unit est for each way that a JSON message can be invalid – there are far to many! Instead we fuzz test parser functions to ensure that they do not throw unexpected exceptions that cannot be type checked and that any errors are reported by an InvalidJson error code with a valid JSON pointer.
 
-If a function is parsing incoming requests, parse errors should be reported to the client as a 400 Bad Request status with a payload that identifies th3
+We use the Snodge library in our fuzz tests.  Snodge is a mutation fuzzer: it mutates known good messages to produce potentially invalid messages.  We follow a TDD process to write the success cases of a parser, so our tests already have known good messages when we come to the fuzz tests.
 
-report parse errors as a Result that can be converted to an appropriate HTTP status (e.g. 500 Bad Request). 400 HTTP status and do not throw unexpected exceptions that would conv
+## We do not always fuzz test parsers for responses
 
+If a function is parsing a response from a service, we [allow it to throw an exception on invalid input if the application's global error handler is adequate](../error-reporting/README.md).
 
-More things to cover:
- * parsing incoming requests vs responses to outgoing requests
- * fuzz testing (e.g. with Snodge)
