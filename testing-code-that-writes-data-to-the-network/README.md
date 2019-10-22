@@ -20,4 +20,3 @@ If we have documented the protocol with JSON schemas and published those schemas
 
 It is possible to generate JSON that conforms to the published JSON schema but puts values into the wrong properties.  Therefore, we write approval tests to verify that values from the domain objects end up in the right JSON properties of the message.
 
-Use the `stableMapper`
