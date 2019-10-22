@@ -1,7 +1,3 @@
-Write this...
-
-Things to cover:
-
 ## We write formatters as pure functions
 
 Most formatters are a function from a domain type to JsonNode.  Don't couple the formatter to OutputStream or HttpResponse.
