@@ -10,5 +10,3 @@ We tend to...
 
 * Define extension functions in other packages to relate the class to other concepts.  
   * For example, an "adapter" package for persistence of Articles as JSON blobs might define extension functions `Article.toJson(): JsonNode` and `JsonNode.toArticle(): Article`, and `Connection.loadArticle(id: ArticleId): Article?` and `Connection.saveArticle(article: Article)`.
-
-* Define withXXX, plusXXX, minusXXX extensions to abstract the use of the builtin `copy` method of data classes where that simplifies code, removes duplication, and/or reduces possibility of coding error.
