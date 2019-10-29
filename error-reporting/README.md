@@ -14,3 +14,11 @@ Technical errors that can be handled by a single point in our system are reporte
 
 ![Exception or Result?](error-reporting.svg)
 
+## Learn from our mistakes!
+
+A mistake we made early on was to define a common subtype for the error codes.  This lead to lots of functions returning `Result<ErrorCode,T>`, meaning that they could return any kind of error.  Code that processes error codes can no longer rely on the type checker to make sure that all possible errors have been handled.
+
+We should have defined sealed class hierarchies of error codes for bounded contexts within our application, and converted the error codes as they crossed the boundaries of those contexts.
+
+Live and learn...
+
