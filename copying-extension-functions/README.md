@@ -24,9 +24,17 @@ fun f(e: Example): Example {
 }
 ```
 
+And `plusBar` is implemented as follows, which also makes the error impossible:
+
+```kotlin
+fun Example.plusBar(n: Int) = copy(bar = bar + n)
+```
+
+## Naming Convention
+
 We follow a naming convention for these "copying extensions":
 
-`withThing`: replaces the value of the `thing` property, or if the property `things` is a collection, replaces it with a singleton collection.
-`withoutThings`: replaces the value of a nullable `thing` property with null, or if the property `things` is a collection, replaces it with an emoty collection.
-`plusThing`: adds a value to the `thing` property or adds an element to the `things` collection.
-`minusThing`: subtracts a value from the `thing` property or removes an element from the `things` collection.
+* `withThing`: replaces the value of the `thing` property, or if the property `things` is a collection, replaces it with a singleton collection.
+* `withoutThings`: replaces the value of a nullable `thing` property with null, or if the property `things` is a collection, replaces it with an emoty collection.
+* `plusThing`: adds a value to the `thing` property or adds an element to the `things` collection.
+* `minusThing`: subtracts a value from the `thing` property or removes an element from the `things` collection.
