@@ -4,7 +4,9 @@ We tend to...
 
 * Define data classes to represent the "platonic ideal" of a concept.  E.g. just the essential properties.
 
-* Define fundamental operations as extension functions, [usually in the same file](../organising-code/README.md).
+* Define fundamental operations as extension functions, [usually in the same file as the class](../organising-code/README.md).
+
+* Define extension methods to avoid error-prone calls to the `copy` method of data classes.  These will also [usually be in the same file as the class](../organising-code/README.md)
 
 * Define methods on the class only when required for object-oriented polymorphism.  E.g. to implement an interface, or to extend an abstract class.
 
