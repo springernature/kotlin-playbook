@@ -2,7 +2,7 @@
 
 We do not use static loggers and our code does not report activity by formatting and logging human-readable text. 
 
-Instead we define monitoring event types for significant events. An object emits montoring events to a Monitor interface that is passed to its constructor. 
+Instead we define monitoring event types for significant events. An object emits monitoring events to a Monitor interface that is passed to its constructor. 
 
 Monitoring events derive from a common supertype that implements consistent serialisation of logged events to name/value pairs and a human-readable summary, which are sent to Kibana.
 
